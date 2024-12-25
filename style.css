@@ -1,0 +1,116 @@
+/* styles.css */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+
+header{
+    background: linear-gradient(to right, #2cc7ea, #0083b0);
+    color: white;
+    text-align: center;
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    padding: 20px 20px;
+}
+
+header nav ul{
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+   
+}
+
+header nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    
+}
+header nav ul li a:hover,ul li a.active{
+    text-decoration: underline 2px;
+    text-underline-offset:8px;
+    color: white;
+    
+}
+
+section {
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.skills-container,
+.projects-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.skill,
+.project-card {
+    border: 1px solid #ddd;
+    padding: 20px;
+    width: 500px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.skill:hover,
+.project-card:hover {
+    transform: scale(1.05);
+    transition: transform 0.3s ease;
+}
+
+#contact-form input,
+#contact-form textarea,
+#contact-form button {
+    display: block;
+    width: 100%;
+    margin: 10px 0;
+    padding: 10px;
+}
+.skill-container{
+    display: flex;
+    justify-content: space-evenly;
+}
+.contact-container{
+    display: flex;
+    justify-content:center;
+    gap:40px;
+    flex-direction: column;
+}
+.contact-container,ul,li{
+    list-style:none;
+}
+.contact-container,ul,li a{
+    text-decoration: none;
+    margin:20px;
+}
+.skill-container ul{
+    list-style: none;
+}
+
+footer {
+    background: #333;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
+
+@media only screen and (max-width:520px){
+    header nav ul{
+        list-style: none;
+        display: flex;
+        justify-content: center;
+        gap:10px;
+        font-size:10px
+    }
+    header h2{
+        font-size:15px;
+    }
+}
